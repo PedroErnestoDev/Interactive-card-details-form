@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-grayish-violet: hsl(270, 3%, 87%);
+--Dark-grayish-violet: hsl(279, 6%, 55%);
+--Very-dark-violet: hsl(278, 68%, 11%);
+--Red-input-errors: hsl(0, 100%, 66%);
+
+}
+::-webkit-input-placeholder {
+    color: var(--Light-grayish-violet);
+ }
+body{
+    font-family: "Space Grotesk";
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cards{
+    position: absolute;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cardfront{
+    margin-left: 170px;
+}
+.cardback{
+    margin-left: 250px;
+    
+}
+.circulo1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 155px;
+    left: 200px;
+}
+.circulo2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 1px white;
+    position: absolute;
+    top: 165px;
+    left: 260px;
+}
+.nomecard{
+    position: absolute;
+    top: 294px;
+    left: 200px;
+    color: white;
+    letter-spacing: 1px;
+}
+.numerocard{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16pt;
+    
+}
+.mmyycontainer{
+    position: absolute;
+    top: 298px;
+    left: 450px;
+    color: white;
+    font-size: 10pt;
+}
+.cvccard{
+    position: absolute;
+    top: 440px;
+    left: 525px;
+    color: var(--Light-grayish-violet);
+    letter-spacing: 2px;
+    font-size: 10pt;
+}
+form{
+    padding-top: 190px;
+    padding-left: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 500px;
+}
+#botao{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--Very-dark-violet);
+    color: white;
+    border: none;
+}
+.dateform{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+}
+#nomeinput{
+    color: black;
+    padding: 0px 10px 0px 7px;
+    border: solid 1px var(--Light-grayish-violet);
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+}
+#numeroinput{
+    padding: 0px 10px 0px 7px;
+    border: solid 1px var(--Light-grayish-violet);
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+}
+#dateinputmm{
+    padding: 0px 10px 0px 7px;
+    border: solid 1px var(--Light-grayish-violet);
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+}
+#dateinputyy{
+    padding: 0px 10px 0px 7px;
+    border: solid 1px var(--Light-grayish-violet);
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+}
+#cvcinput{
+    padding: 0px 10px 0px 7px;
+    border: solid 1px var(--Light-grayish-violet);
+    border-radius: 5px;
+    width: 160px;
+    height: 35px;
+}
+.containerdatecvc{
+    display: flex;
+    gap: 10px;
+}
+#mmyy{
+    width: 130px;
+    display: flex;
+}
+label{
+    font-size: 8pt;
+    color: var(--Dark-grayish-violet);
+
+}
+.cvcform{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+}
+.nomeform{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.numeroform{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#imgback{
+    width: 400px;
+    height: 100vh;
+    display: flex;
+}
+#imgcardf{
+    filter: drop-shadow(10px 10px 10px black);
+    width: 350px;
+    height: 200px;
+}
+#imgcardb{
+    filter: drop-shadow(10px 10px 10px black);
+    width: 350px;
+    height: 200px;
+}
+.spanerrornome, .spanerrornum, .spanerrormm, .spanerroryy, .spanerrorcvc{
+    color: var(--Red-input-errors);
+    font-size: 8pt;
+    display: none;   
+}
+.spanerrormm, .spanerroryy{
+    margin-top: 10px;
+}
+.errormm{
+    width: 65px;
+}
+.erroryy{
+    width: 65px;
+}
+#iconcomplete{
+    height: 60px;
+    width: 60px;
+}
+.divthank{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 10px;
+    right: 340px;
+    top: 260px;
+    display: none;
+}
+#textosthank{
+    margin-top: 10px;
+}
+#botao2{
+    margin-top: 20px;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--Very-dark-violet);
+    color: white;
+    border: none;
+}
+#imgbackmobile{
+    display: none;
+    height: 300px;
+    width: auto;
+}
+.containerhref{
+    position: absolute;
+    top: 95%;
+    right: 30%;
+}

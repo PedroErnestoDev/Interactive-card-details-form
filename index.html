@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="divthank">
+        <img src="images/icon-complete.svg" alt="" id="iconcomplete">
+        <div id="textosthank">
+        <h1>THANK YOU!</h1>
+        <P>We`ve added your card details</P>
+        <button type="button" id="botao2">Continue</button>
+    </div>
+    </div>
+        <img src="images/bg-main-desktop.png" id="imgback">
+        <img src="images/bg-main-mobile.png" alt="" id="imgbackmobile">
+    <div class="cards">
+        <div class="cardfront">
+            <img src="images/bg-card-front.png" alt="" id="imgcardf">
+        </div>
+        <div class="cardback">
+            <img src="images/bg-card-back.png" alt="" id="imgcardb">
+        </div>
+    </div>
+    <div class="circulo1"></div>
+    <div class="circulo2"></div>
+    <span class="nomecard">name</span>
+    <span class="numerocard">0000 0000 0000 0000</span>
+    <div class="mmyycontainer">
+    <span class="mmcard">00</span>
+    /
+    <span class="yycard">00</span>
+</div>
+    <span class="cvccard">000</span>
+    <form action="">
+        <div class="nomeform">
+        <label for="nomeinput">CARD HOLDER NAME</label>
+        <input type="text" placeholder="e.g. name" id="nomeinput" onkeyup="showdadosnome()">
+        <span class="spanerrornome">dados obrigatorios</span>
+    </div>
+        <div class="numeroform">
+        <label for="numeroinput">CARD NUMBER</label>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="numeroinput" onkeyup="showdadosnum()" maxlength="19">
+        <span class="spanerrornum">dados obrigatorios</span>
+    </div>
+    </div>
+    <div class="containerdatecvc">
+    <div class="dateform">
+        <label for="dateinputmm">EXP. DATE ( M M / Y Y )</label>
+        <div id="mmyy">
+            <div class="errormm">
+        <input type="text" placeholder="MM" id="dateinputmm" onkeyup="showdadosmm()" maxlength="2">
+        <span class="spanerrormm">obrigatorio</span>
+    </div>
+    <div class="erroryy">
+        <input type="text" placeholder="YY" id="dateinputyy" onkeyup="showdadosyy()" maxlength="2">
+        <span class="spanerroryy">obrigatorio</span>
+        </div>
+    </div>
+    </div>
+    <div class="cvcform">
+        <label for="cvcinput">CVC</label>
+        <input type="text" placeholder="e.g. 123" id="cvcinput" onkeyup="showdadoscvc()" maxlength="3">
+        <span class="spanerrorcvc">dados obrigatorios</span>
+    </div>
+    </div>
+    <button type="submit" id="botao" onclick="showerror(event)">Confirm</button>
+    </form>
+    <div class="containerhref">
+    <p>Challenge by <a href="https://www.frontendmentor.io/?ref=challenge">Frontend Mentor</a>. Coded by Your <a href="https://github.com/PedroErnestoDev">Pedro Ernesto</a>.</p>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
